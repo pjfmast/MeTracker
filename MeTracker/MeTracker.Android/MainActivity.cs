@@ -16,10 +16,8 @@ namespace MeTracker.Droid
             
 
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            // todo see p239
             global::Xamarin.FormsMaps.Init(this, savedInstanceState);
 
-            // todo initialize Xamarin essentials (page 239)
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
             Bootstrapper.Init();

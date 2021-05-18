@@ -39,6 +39,7 @@ namespace MeTracker.Droid.Services {
 
         }
 
+        // todo p241 - start request for location updates
         public override bool OnStartJob(JobParameters @params) {
             locationManager = (LocationManager)ApplicationContext.GetSystemService(Context.LocationService);
             locationManager.RequestLocationUpdates(LocationManager.GpsProvider, 1000L, 0.1f, this);
