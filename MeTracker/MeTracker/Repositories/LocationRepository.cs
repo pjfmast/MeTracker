@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MeTracker.Repositories {
+    // todo p216 - implement ILocationRepository
     public class LocationRepository : ILocationRepository {
         private SQLiteAsyncConnection connection;
         private async Task CreateConnection() {

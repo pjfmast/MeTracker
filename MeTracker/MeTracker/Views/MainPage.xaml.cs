@@ -10,13 +10,14 @@ using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
 namespace MeTracker {
-    public partial class MainPage : ContentPage {
-        public MainPage(MainViewModel viewModel) {
+    // todo p218 - create MainView
+    public partial class MainView : ContentPage {
+        public MainView(MainViewModel viewModel) {
             InitializeComponent();
 
-            //page 138
             BindingContext = viewModel;
 
+            // todo p222 - center map on position. Run this on the main ui thread.
             MainThread.BeginInvokeOnMainThread(async () => {
                 // Code to run on the main thread
                 var location = await Geolocation.GetLocationAsync();

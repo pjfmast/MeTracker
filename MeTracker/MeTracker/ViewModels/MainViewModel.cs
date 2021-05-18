@@ -7,6 +7,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace MeTracker.ViewModels {
+    // todo p223 - create MainViewModel
     public class MainViewModel : ViewModel {
         public readonly ILocationRepository locationRepository;
         public readonly ILocationTrackingService locationTrackingService;
@@ -21,6 +22,7 @@ namespace MeTracker.ViewModels {
             });
         }
 
+        // todo p243-244 - extend MainViewModel with functionality to group visited Locations in Points on the heat map
         private async Task LoadData() {
             var locations = await locationRepository.GetAll();
             var pointList = new List<Models.Point>();
@@ -61,6 +63,7 @@ namespace MeTracker.ViewModels {
                 var diff = (float)(pointMax - pointMin);
 
                 foreach (var point in pointList) {
+                    // todo p245 calculate the heat between 0 (Red) and 240 (Blue) on the scale
                     var heat = (2f / 3f) - ((float)point.Count / diff);
                     point.Heat = Color.FromHsla(heat, 1, 0.5);
                 }

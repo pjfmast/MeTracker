@@ -1,6 +1,7 @@
 ﻿using SQLite;
 
 namespace MeTracker.Models {
+    // todo p214 - create model Location
     public class Location {
         public Location() { }
 

@@ -5,6 +5,7 @@ using MeTracker.Services;
 
 namespace MeTracker.Droid.Services {
     public class LocationTrackingService : ILocationTrackingService {
+        // todo p238-239 schedule location job service
         public void StartTracking() {
             var javaClass = Java.Lang.Class.FromType(typeof(LocationJobService));
             var componentName = new ComponentName(Application.Context, javaClass);

@@ -15,6 +15,8 @@ using System.Text;
 namespace MeTracker.Droid.Services {
     [Service(Name = "MeTracker.Droid.Services.LocationJobService",
           Permission = "android.permission.BIND_JOB_SERVICE")]
+
+    // todo p237 - Android specific implementation of background job
     public class LocationJobService : JobService, ILocationListener {
         private readonly ILocationRepository locationRepository;
         private static LocationManager locationManager;
@@ -23,6 +25,7 @@ namespace MeTracker.Droid.Services {
             locationRepository = Resolver.Resolve<ILocationRepository>();
         }
 
+        // todo p240 - subscribe to location updates. Save each new location
         public void OnLocationChanged(Location location) {
             var newLocation = new Models.Location(location.Latitude, location.Longitude);
             locationRepository.Save(newLocation);

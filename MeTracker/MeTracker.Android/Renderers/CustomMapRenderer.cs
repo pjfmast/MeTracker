@@ -30,7 +30,7 @@ namespace MeTracker.Droid.Renderers {
 
             base.OnMapReady(map);
         }
-
+        // todo p252-255 - implement Android specific renderer for CustomMap
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e) {
             base.OnElementPropertyChanged(sender, e);
 

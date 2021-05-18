@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:map1="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              xmlns:map2="clr-namespace:MeTracker.Controls"
-             x:Class="MeTracker.MainPage">
+             x:Class="MeTracker.MainView">
 
     <ContentPage.Content>
         <!--<map1:Map x:Name="Map" />-->
