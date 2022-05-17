@@ -6,10 +6,12 @@
              x:Class="MeTracker.MainView">
 
     <ContentPage.Content>
+        <RefreshView>
         <!--<map1:Map x:Name="Map" />-->
         <map2:CustomMap x:Name="Map"
                         IsShowingUser="True"
                         Points="{Binding Points}" />
+        </RefreshView>
     </ContentPage.Content>
 
 </ContentPage>

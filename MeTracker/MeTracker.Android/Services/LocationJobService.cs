@@ -4,15 +4,10 @@ using Android.Content;
 using Android.Locations;
 using Android.OS;
 using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using MeTracker.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace MeTracker.Droid.Services {
+namespace MeTracker.Droid.Services
+{
     [Service(Name = "MeTracker.Droid.Services.LocationJobService",
           Permission = "android.permission.BIND_JOB_SERVICE")]
 

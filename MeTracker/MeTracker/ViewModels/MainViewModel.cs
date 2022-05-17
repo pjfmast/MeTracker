@@ -23,7 +23,7 @@ namespace MeTracker.ViewModels {
         }
 
         // todo p243-244 - extend MainViewModel with functionality to group visited Locations in Points on the heat map
-        private async Task LoadData() {
+        public async Task LoadData() {
             var locations = await locationRepository.GetAll();
             var pointList = new List<Models.Point>();
 
