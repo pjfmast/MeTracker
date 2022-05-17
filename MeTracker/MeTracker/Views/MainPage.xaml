@@ -7,7 +7,9 @@
 
     <ContentPage.Content>
         <!--<map1:Map x:Name="Map" />-->
-        <map2:CustomMap x:Name="Map" Points="{Binding Points}" />
+        <map2:CustomMap x:Name="Map"
+                        IsShowingUser="True"
+                        Points="{Binding Points}" />
     </ContentPage.Content>
 
 </ContentPage>

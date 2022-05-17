@@ -1,9 +1,7 @@
 ﻿using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace MeTracker {
+namespace MeTracker
+{
     public class Resolver {
         private static IContainer container;
 

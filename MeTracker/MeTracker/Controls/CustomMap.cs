@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Xamarin.Forms;
-using Xamarin.Forms.Maps; // Niet Xamarin.Essentials.Map
+using Xamarin.Forms.Maps; // Not: Xamarin.Essentials.Map
 
 
 namespace MeTracker.Controls {
