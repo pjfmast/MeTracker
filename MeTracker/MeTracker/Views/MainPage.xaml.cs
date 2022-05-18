@@ -26,12 +26,6 @@ namespace MeTracker {
                     Distance.FromKilometers(5)));
             });
 
-            Xamarin.Forms.Device.StartTimer(TimeSpan.FromSeconds(5), () =>
-            {
-                Task.Run(async () => await viewModel.LoadData());
-
-                return true;
-            });
 
 
         }
